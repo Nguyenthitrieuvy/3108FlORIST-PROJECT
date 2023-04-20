@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.banner {
+    position: relative;
+}
+.banner .banner-about {
+    overflow: hidden;
+    position: relative;
+}
+.banner .title-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner .title-banner h1 {
+    font-family: Abril Fatface;
+    font-weight: 400;
+    font-size: 55px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner ul {
+    text-align: center;
+}
+.banner ul li {
+    display: inline;
+}
+.banner ul li + li:before {
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(232, 232, 232);
+    content: ">";
+}
+.banner ul li a {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(232, 232, 232);
+}
+.banner ul li a:hover {
+    color: rgb(157, 155, 155);
+}
+
+.img-link {
+    padding-bottom: 50px;
+}
+.img-link p {
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: 300;
+}
+.img-link h3 {
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+.img-link h3::after {
+    content: "";
+    width: 20%;
+    height: 1px;
+    background-color: #000;
+    display: block;
+    margin: 15px auto;
+}
+.img-link .img-color-1 {
+    border: 1px solid rgb(210, 210, 210);
+    padding: 80px 0;
+}
+.img-link .img-color-1 p {
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    margin: 0 auto;
+}
+.img-link .img-color-2 {
+    border: 1px solid rgb(210, 210, 210);
+    padding: 79px 0;
+}
+.img-link .img-color-2 p {
+    border: 1px solid #888;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #000;
+    margin: 0 auto;
+}
+.img-link .img-color-3 {
+    border: 1px solid rgb(210, 210, 210);
+    padding: 79px 0;
+}
+.img-link .img-color-3 p {
+    border: 1px solid #888;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #000;
+    margin: 0 auto;
+}
+
+.table thead {
+    background-color: rgb(212, 212, 212);
+    color: #fff;
+}
+.table tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.table .product-photo {
+    width: 20%;
+}
+.table .produc-name {
+    text-align: center;
+}
+.table .produc-name a {
+    color: #000;
+}
+.table .produc-price input {
+    border: none;
+    color: #888;
+}
+.table .quantity {
+    border: 1px solid gray;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding: 8px 2px;
+}
+.table .quantity input {
+    border: none;
+    text-align: center;
+}
+.table .product-remove i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 50%;
+    color: #000;
+}
+.total {
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+.total .left h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.total .right p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.box {
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.box .float-left a {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 25px;
+    font-family: Abril Fatface;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+.box .float-left a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.box .float-right a {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 25px;
+    font-family: Abril Fatface;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+.box .float-right a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.box1 {
+    margin-bottom: 50px;
+}
+.box1 .item {
+    border: 1px solid #e6e6e6;
+    padding: 50px 20px;
+}
+.box1 .item .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(90, 90, 90);
+}
+.box1 .item p {
+    color: rgb(111, 111, 111);
+}
+.box1 .item input {
+    margin-bottom: 40px;
+}
+.box1 .item a {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 25px;
+    font-family: Abril Fatface;
+    transition: 0.5s;
+    border: 1px solid #000;
+}
+.box1 .item a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.box1 .item .form-group {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.info-footer {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 70px;
+}
+
+@media (max-width: 991px) {
+    .banner .title-banner h1 {
+        font-size: 50px;
+    }
+    .img-link .img-color-2 {
+        margin-top: 20px;
+    }
+    .img-link .img-color-3 {
+        margin-top: 20px;
+    }
+    .box {
+        display: block;
+    }
+    .box .float-right {
+        margin-top: 33px;
+    }
+    .box1 .item {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .banner .title-banner h1 {
+        font-size: 35px;
+    }
+    .table .product-photo {
+        width: 50%;
+    }
+}
+@media (max-width: 479px) {
+    .banner .title-banner h1 {
+        font-size: 30px;
+    }
+    .table .product-photo {
+        width: 100%;
+    }
+    .box .float-left a {
+        padding: 12px;
+    }
+    .box .float-right a {
+        padding: 12px;
+    }
+}

@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    display: block;
+}
+body {
+    position: relative;
+    background-image: url(../img/BG-home1.jpeg);
+    background-position: -515px 0;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.navbar {
+    margin-bottom: 15px;
+}
+.link .menu-breadcrumb {
+    padding: 20px 0 20px 0;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+.link ul.breadcrumb {
+    padding: 15px 0;
+    background: #fff;
+}
+.link ul.breadcrumb li {
+    display: inline;
+}
+.link ul.breadcrumb li + li:before {
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #888888;
+    content: ">";
+}
+.link ul.breadcrumb li a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #888888;
+}
+
+.link ul.breadcrumb li:last-child a {
+    color: black;
+    font-weight: bold;
+}
+.link ul.breadcrumb li a:hover {
+    color: black;
+}
+
+.product-detail .text h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.product-detail .text p {
+    color: #888;
+}
+.product-detail .icon {
+    display: flex;
+    margin-top: 25px;
+}
+.product-detail .icon i {
+    color: rgb(245, 160, 174);
+    margin-top: 4px;
+}
+.product-detail .icon p {
+    margin-left: 20px;
+    color: #888;
+}
+.product-detail .money {
+    margin-top: 18px;
+    border-bottom: 1px solid #ddd;
+    width: 80%;
+}
+.product-detail .money h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.product-detail .money h3 span {
+    font-size: 15px;
+    color: rgb(189, 189, 189);
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+.product-detail .color {
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.product-detail .sta-red {
+    color: rgb(246, 122, 143);
+}
+.product-detail .color-board {
+    display: flex;
+}
+.product-detail .color-1 {
+    background-color: pink;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.product-detail .color-2 {
+    background-color: gold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.product-detail .color-3 {
+    background-color: #fff;
+    border: 1px solid rgb(221, 221, 221);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.product-detail .color-4 {
+    background-color: plum;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.product-detail button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 80px;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+.product-detail button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.write {
+    margin: 100px 0;
+}
+.write p {
+    color: #888;
+    font-size: 15px;
+}
+.nav-tabs .nav-link {
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+.related {
+    border-bottom: 1px solid gray;
+}
+.related .text h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.related .card {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+.related .card .content {
+    text-align: center;
+}
+.related .card .content h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 400;
+    color: #333;
+}
+.related .card .icon {
+    color: rgb(240, 119, 119);
+    margin-bottom: 7px;
+}
+.related .card .sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(240, 119, 119);
+    font-size: 13px;
+    padding: 3px 8px;
+    color: #fff;
+}
+.related .card p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+.related .card p span {
+    text-decoration: line-through;
+    color: rgb(159, 159, 159);
+    font-size: 15px;
+    margin-left: 8px;
+}
+.related .card .social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.related .card:hover .social {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.related .card .social i {
+    margin-top: 150px;
+    font-size: 20px;
+    text-align: center;
+    color: #888;
+}
+.related .card .social i:hover {
+    color: #000;
+}
+.related .card .social a {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+.info-footer {
+    margin-top: 70px;
+}

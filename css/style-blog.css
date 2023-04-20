@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    display: block;
+}
+body {
+    position: relative;
+    background-image: url(../img/BG-home1.jpeg);
+    background-position: -515px 0;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.banner .text {
+    top: -40px;
+    left: 20%;
+    transform: translateY(50%);
+}
+.banner .text h2 {
+    animation: banner 2s;
+}
+.banner .text h4 {
+    animation: banner2 1.5s;
+}
+.banner .text button {
+    margin-top: 10px;
+    padding: 8px 25px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    transition: 0.5s;
+    animation: banner2 1.5s;
+}
+.banner .text button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@keyframes banner {
+    from {
+        opacity: 0;
+        transform: translateY(30px) rotate(60deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+    }
+}
+@keyframes banner2 {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content {
+    margin-top: 50px;
+    border-bottom: 1px solid gray;
+}
+.content input {
+    padding: 12px 15px;
+    width: 100%;
+    outline: none;
+    background-color: rgb(245, 245, 245);
+    border: none;
+}
+.search {
+    position: relative;
+    width: 35%;
+}
+.search i {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.content a {
+    font-size: 17px;
+    color: #888;
+    transition: 0.5s;
+}
+.content a:hover {
+    color: #000;
+}
+.content i {
+    font-size: 12px;
+}
+.content span {
+    color: #000;
+}
+.content .thumb {
+    margin-top: 50px;
+}
+.content .text {
+    margin-top: 60px;
+}
+
+.content .thumb img {
+    transition: all 0.5s;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.content .thumb:hover img {
+    opacity: 0.7;
+    transform: scale(0.98);
+}
+.content .info {
+    display: flex;
+}
+.content .text h2 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.content .text h2:hover {
+    color: pink;
+}
+.content .contact {
+    display: flex;
+    margin-top: 15px;
+}
+.content .contact h4 {
+    font-size: 15px;
+    margin-left: 10px;
+    color: #888;
+}
+.content .contact h4::after {
+    content: "";
+    border: 1px solid gray;
+    margin-left: 25px;
+    color: #888;
+}
+.content .contact a {
+    font-size: 12px;
+    color: #888;
+}
+.content .contact2 {
+    display: flex;
+    margin-top: 13px;
+    margin-left: 18px;
+}
+.content .contact2 h4 {
+    font-size: 15px;
+    color: #888;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.content .contact2 a {
+    font-size: 14px;
+    color: #888;
+}
+.content p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.content .read {
+    margin-top: 50px;
+}
+.content .read a {
+    color: #000;
+    font-weight: 500;
+    font-family: "Abril Fatface", cursive;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.content .read a:hover {
+    color: pink;
+}
+.content .number {
+    padding-top: 40px;
+    padding-bottom: 150px;
+}
+.content .number li {
+    display: inline-block;
+    margin: 2px;
+}
+.content .number li a {
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    background-color: #eeeeee;
+    border: none;
+    padding: 7px 10px;
+    transition: 0.5s;
+}
+.content .number li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.info-footer {
+    margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+    .banner .text h2 {
+        font-size: 25px;
+    }
+    .banner .text h4 {
+        font-size: 10px;
+    }
+    .banner .text button {
+        padding: 4px 8px;
+    }
+    .content .number {
+        padding-bottom: 50px;
+    }
+    .search {
+        position: relative;
+        width: 55%;
+    }
+    .content .thumb {
+        margin-top: 25px;
+    }
+}
+@media (max-width: 479px) {
+    .banner .text button {
+        display: none;
+    }
+    .content {
+        margin-top: 25px;
+    }
+    .search {
+        position: relative;
+        width: 65%;
+    }
+}

@@ -1,0 +1,1105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    display: block;
+}
+body {
+    position: relative;
+    background-image: url(../img/BG-home1.jpeg);
+    background-position: -515px 0;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.navbar {
+    margin-top: 15px;
+}
+.navbar img {
+    width: 120px;
+}
+.navbar .nav-link {
+    color: #000;
+    font-size: 20px;
+    margin-left: 40px;
+    font-weight: 300;
+    align-items: center;
+}
+.navbar .nav-link.active {
+    color: #000;
+}
+.navbar .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: 0.3s;
+}
+.navbar .nav-link:hover::after {
+    width: 30px;
+}
+.navbar .navbar-icon a {
+    margin-right: 40px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 100;
+    color: #000;
+}
+.navbar .navbar-icon .icon-lock {
+    position: relative;
+}
+.navbar .navbar-icon .icon-lock span {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+    left: 10px;
+    bottom: 13px;
+}
+.glasses {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+    display: none;
+}
+.glasses.active {
+    display: block;
+}
+.glasses h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 150px;
+}
+.glasses i {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    border-radius: 50%;
+    padding: 10px 12px;
+    border: 3px solid gray;
+    color: gray;
+    transition: 0.5s;
+    font-size: 20px;
+    cursor: pointer;
+}
+.glasses i:hover {
+    color: #000;
+    border: 3px solid #000;
+}
+.glasses .search {
+    text-align: center;
+    margin-top: 50px;
+}
+.glasses input {
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 25px;
+    color: #888;
+    margin-top: 60px;
+    width: 50%;
+    outline: none;
+}
+.glasses button {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    padding: 5px 15px;
+    font-family: Abril Fatface;
+    transition: 0.5s;
+}
+.glasses button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.form {
+    background-color: rgb(246, 246, 246);
+    position: absolute;
+    z-index: 9999;
+    width: 27%;
+    right: 150px;
+    top: 90px;
+    display: none;
+    padding: 20px;
+}
+.form.active {
+    display: block;
+}
+.form .thumb {
+    display: flex;
+}
+.form .thumb img {
+    width: 20%;
+    margin: 15px;
+}
+.form .thumb .text h1 {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.form .thumb .text h6 {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.form .thumb .text h6 span {
+    font-weight: bold;
+    margin-left: 30px;
+}
+.form .total {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.form .total h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.form .total h3 span {
+    margin-left: 40px;
+}
+.form .button {
+    margin-top: 25px;
+}
+.form .button button {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    padding: 5px 15px;
+    margin-left: 18px;
+    transition: 0.5s;
+}
+.form .button button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.carousel {
+    margin-top: 15px;
+    overflow-x: hidden;
+}
+.carousel .carousel-text .carousel-caption {
+    bottom: 60%;
+    left: 10%;
+    color: #333;
+    text-align: left;
+    transform: translateY(50%);
+    width: 40%;
+}
+.carousel .carousel-text1 .carousel-caption {
+    bottom: 60%;
+    left: 55%;
+    color: #333;
+    text-align: left;
+    transform: translateY(50%);
+    width: 40%;
+}
+.carousel .carousel-caption h3 {
+    color: #333;
+    margin-top: 70px;
+    animation: carousel-caption 2s;
+}
+.carousel .carousel-caption h2 {
+    margin-top: 0;
+    padding-bottom: 40px;
+    color: #fff;
+    font-size: 100px;
+    font-family: "Abril Fatface", cursive;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(../img/slide/BG-title.jpeg);
+    background-position: -300px -290px;
+    animation: carousel-caption2 1.5s;
+}
+.carousel .carousel-caption button {
+    font-weight: 700;
+    padding: 12px 35px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 30px;
+    border: 1px solid #000;
+    font-family: "Abril Fatface", cursive;
+    transition: 0.5s;
+    animation: carousel-caption2 1.5s;
+}
+.carousel .carousel-caption button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@keyframes carousel-caption {
+    from {
+        opacity: 0;
+        transform: translateY(30px) rotate(60deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+    }
+}
+@keyframes carousel-caption2 {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.banner {
+    margin-top: 30px;
+    position: relative;
+}
+.banner .thumb {
+    position: relative;
+}
+.banner .text {
+    position: absolute;
+    top: 25%;
+    left: 55%;
+}
+.banner .text h2 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 52px;
+}
+.banner .text h4 {
+    color: #888;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.banner .text a {
+    font-family: "Abril Fatface", cursive;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.banner .text a:hover {
+    color: pink;
+}
+
+.banner2 {
+    margin-top: 30px;
+    position: relative;
+}
+.banner2 .thumb {
+    position: relative;
+}
+.banner2 .text1 {
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    text-align: center;
+}
+.banner2 .text1 h2 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 55px;
+    font-weight: 200;
+}
+.banner2 .text1 h4 {
+    color: #888;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.banner2 .text {
+    position: absolute;
+    top: 18%;
+    left: 10%;
+}
+.banner2 .text h2 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 54px;
+}
+.banner2 .text h4 {
+    color: #888;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.banner2 button {
+    font-weight: 700;
+    padding: 10px 35px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 25px;
+    border: 1px solid #000;
+    font-family: "Abril Fatface", cursive;
+    transition: 0.5s;
+}
+.banner2 button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.headline .title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-family: "Abril Fatface", cursive;
+    font-size: 40px;
+}
+.nav-tabs {
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+.nav-tabs .nav-link {
+    color: #333;
+    border: none;
+    margin-left: 50px;
+    font-size: 25px;
+}
+.nav-tabs .nav-link.active {
+    color: #000;
+    font-weight: bold;
+}
+.nav-tabs .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: 0.3s;
+}
+.nav-tabs .nav-link:hover::after {
+    width: 30px;
+}
+.product .card {
+    position: relative;
+    border: none;
+    background-color: transparent;
+}
+.product .card .content {
+    text-align: center;
+}
+.product .card .content h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 400;
+    color: #333;
+}
+.product .card .icon {
+    color: rgb(240, 119, 119);
+    margin-bottom: 7px;
+}
+.product .card .sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(240, 119, 119);
+    font-size: 13px;
+    padding: 3px 8px;
+    color: #fff;
+}
+.product .card p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+.product .card p span {
+    text-decoration: line-through;
+    color: rgb(159, 159, 159);
+    font-size: 15px;
+    margin-left: 8px;
+}
+.product .card .social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.product .card:hover .social {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.product .card .social i {
+    margin-top: 150px;
+    font-size: 20px;
+    text-align: center;
+    color: #888;
+}
+.product .card .social i:hover {
+    color: #000;
+}
+.product .card .social a {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+.modal-dialog {
+    max-width: 1000px;
+}
+.modal-body .thumbBig {
+    width: 60%;
+    margin: 0 150px;
+}
+.modal-body .text h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.modal-body .text p {
+    color: #888;
+}
+.modal-body .icon {
+    display: flex;
+    margin-top: 25px;
+}
+.modal-body .icon i {
+    color: rgb(245, 160, 174);
+    margin-top: 4px;
+}
+.modal-body .icon p {
+    margin-left: 20px;
+    color: #888;
+}
+.modal-body .money {
+    margin-top: 18px;
+}
+.modal-body .money h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.modal-body .money h3 span {
+    font-size: 15px;
+    color: rgb(189, 189, 189);
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+.modal-body .color {
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.modal-body .sta-red {
+    color: rgb(246, 122, 143);
+}
+.modal-body .color-board {
+    display: flex;
+}
+.modal-body .color-1 {
+    background-color: pink;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.modal-body .color-2 {
+    background-color: gold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.modal-body .color-3 {
+    background-color: #fff;
+    border: 1px solid rgb(221, 221, 221);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.modal-body .color-4 {
+    background-color: plum;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.count {
+    background: #dbe7e9;
+    padding: 50px 0 100px;
+    margin-top: 50px;
+}
+.count h1 {
+    font-family: Abril Fatface;
+    font-weight: 400;
+    font-size: 45px;
+    color: black;
+    text-align: center;
+}
+.count p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #939595;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    margin-top: -60px;
+}
+.slider .card {
+    position: relative;
+    border: none;
+    background-color: transparent;
+}
+.slider .card .content {
+    text-align: center;
+}
+.slider .card .content h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 400;
+    color: #333;
+}
+.slider .card .icon {
+    color: rgb(240, 119, 119);
+    margin-bottom: 7px;
+}
+.slider .card .sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(240, 119, 119);
+    font-size: 13px;
+    padding: 3px 8px;
+    color: #fff;
+}
+.slider .card p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+.slider .card p span {
+    text-decoration: line-through;
+    color: rgb(159, 159, 159);
+    font-size: 15px;
+    margin-left: 8px;
+}
+.slider .card .social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.slider .card:hover .social {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.slider .card .social i {
+    margin-top: 150px;
+    font-size: 20px;
+    text-align: center;
+    color: #888;
+}
+.slider .card .social i:hover {
+    color: #000;
+}
+.slider .card .social a {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+.special {
+    margin-top: 50px;
+    background: rgb(248, 234, 236);
+    padding: 100px 0;
+    position: relative;
+}
+.special img {
+    width: 70%;
+}
+.special .box {
+    background-color: #fff;
+    width: 40%;
+    left: 50%;
+    top: 23%;
+    position: absolute;
+}
+.special .box h3 {
+    font-size: 20px;
+    margin: 50px 30px 0;
+    color: pink;
+}
+.special .box h1 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 30px;
+    margin: 20px 30px 30px;
+}
+.special .box h1::after {
+    content: "";
+    width: 15%;
+    height: 1px;
+    background-color: #000;
+    display: block;
+    margin-top: 20px;
+}
+.special .box p {
+    margin: 0 30px 30px;
+    font-size: 15px;
+    color: #939595;
+}
+.special .box button {
+    margin: 0 30px 50px;
+    background-color: pink;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.5s;
+}
+.special .box button:hover {
+    background-color: #000;
+}
+
+.blog .content h2 {
+    text-align: center;
+    font-family: "Abril Fatface", cursive;
+    font-size: 40px;
+    margin-top: 80px;
+}
+.blog .content p {
+    text-align: center;
+    color: #888;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.blog .thumb:hover img {
+    opacity: 0.7;
+    transform: scale(0.98);
+}
+.blog .thumb img {
+    transition: all 0.5s;
+    padding-top: 15px;
+}
+.blog .info {
+    display: flex;
+}
+.blog .text h2 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.blog .text h2:hover {
+    color: pink;
+}
+.blog .contact {
+    display: flex;
+    margin-top: 15px;
+}
+.blog .contact h4 {
+    font-size: 15px;
+    margin-left: 10px;
+    color: #888;
+}
+.blog .contact h4::after {
+    content: "";
+    border: 1px solid gray;
+    margin-left: 40px;
+    color: #888;
+}
+.blog .contact a {
+    font-size: 12px;
+    color: #888;
+}
+.blog .contact2 {
+    display: flex;
+    margin-top: 13px;
+    margin-left: 40px;
+}
+.blog .contact2 h4 {
+    font-size: 15px;
+    margin-left: 8px;
+    color: #888;
+    margin-top: 2px;
+}
+.blog .contact2 a {
+    font-size: 14px;
+    color: #888;
+}
+.blog p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.customer .text {
+    text-align: center;
+}
+.customer .text h2 {
+    text-align: center;
+    font-family: "Abril Fatface", cursive;
+    font-size: 45px;
+    margin-top: 100px;
+}
+.customer .text i {
+    font-size: 60px;
+    color: #000;
+}
+.customer .carousel {
+    text-align: center;
+}
+.customer .carousel p {
+    font-size: 15px;
+    color: #888;
+}
+.customer .carousel img {
+    margin: 40px auto;
+}
+.customer .carousel h3 {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+.customer .carousel h3 span {
+    color: #888;
+    font-size: 17px;
+}
+
+.img-link {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.img-link img {
+    transition: all 0.5s ease;
+}
+.img-link .colum-img {
+    padding: 0 2px;
+    position: relative;
+}
+.img-link .colum-img .img-insta {
+    transition: all 0.5s ease;
+    visibility: hidden;
+    transform: scale(0);
+    position: absolute;
+    top: 38%;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+}
+.img-link .colum-img .img-insta h1 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    margin-top: 10px;
+}
+.img-link .colum-img .img-insta i {
+    font-size: 28px;
+}
+.img-link .colum-img:hover .img-insta {
+    visibility: visible;
+    transform: scale(1);
+}
+.img-link .colum-img:hover img {
+    opacity: 0.2;
+}
+
+.info-footer {
+    padding-bottom: 50px;
+    display: flex;
+}
+.info-footer h3 {
+    font-family: Abril Fatface;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    padding-bottom: 30px;
+}
+.info-footer ul {
+    padding: 0;
+}
+.info-footer ul li {
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+.info-footer ul li i {
+    margin-left: -20px;
+    padding-right: 5px;
+    visibility: hidden;
+    color: #000;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.info-footer ul li a {
+    transition: all 0.3s ease;
+    font-weight: 400;
+    font-size: 16px;
+    color: grey;
+}
+.info-footer ul li a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.info-footer ul li:hover i {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(16px);
+}
+.info-footer ul li:hover a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transform: translateX(16px);
+}
+.info-footer .social p {
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+    padding-top: 2px;
+}
+.info-footer .social a {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #888;
+    transition: 0.5s;
+}
+.info-footer .social a:hover {
+    color: #111;
+}
+
+.info-footer .social h1 {
+    font-family: Abril Fatface;
+    font-weight: 400;
+    font-size: 30px;
+    color: black;
+    padding-top: 30px;
+}
+.info-footer .social h2 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #888888;
+}
+.info-footer .social form {
+    position: relative;
+    margin-top: 10px;
+}
+.info-footer .social form input {
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border-radius: 40px;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+    padding: 7px 25px;
+}
+.footer img {
+    width: 40%;
+    margin-top: 30px;
+}
+.footer {
+    background: #f4f4f4;
+    padding-bottom: 22px;
+}
+.footer span {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    margin-top: 50px;
+}
+.footer i {
+    padding: 0 5px;
+}
+.footer .copy {
+    text-align: center;
+}
+.footer .gmail-footer {
+    text-align: right;
+}
+.footer .gmail-footer span {
+    transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+    .navbar .icon-menu {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .navbar .navbar-collapse {
+        display: none !important;
+    }
+    .offcanvas .offcanvas-header h1 {
+        font-size: 20px;
+        margin-left: 25px;
+        font-weight: bold;
+    }
+    .offcanvas .offcanvas-body li {
+        margin-top: 15px;
+        font-size: 20px;
+        margin-left: 25px;
+    }
+    .offcanvas .offcanvas-text {
+        border-top: 1px solid gray;
+    }
+    .offcanvas .offcanvas-text h1 {
+        font-size: 20px;
+        margin-left: 25px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .offcanvas .offcanvas-text ul li {
+        margin-left: 25px;
+        font-size: 15px;
+    }
+    .carousel .carousel-caption h2 {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+    .banner .text h2 {
+        font-size: 30px;
+    }
+    .banner .text h4 {
+        font-size: 15px;
+    }
+    .banner .text p {
+        font-size: 15px;
+    }
+    .banner2 .text1 h2 {
+        font-size: 30px;
+    }
+    .banner2 .text h2 {
+        font-size: 30px;
+    }
+    .banner2 .text h4 {
+        font-size: 15px;
+    }
+    .banner2 .text button {
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+    .nav-tabs .nav-link {
+        margin-left: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .carousel .carousel-caption h2 {
+        font-size: 40px;
+    }
+    .carousel .carousel-caption button {
+        padding: 6px 12px;
+        margin-top: 7px;
+    }
+    .banner .text h2 {
+        font-size: 40px;
+    }
+    .banner .text h4 {
+        font-size: 15px;
+    }
+    .banner .text p {
+        font-size: 15px;
+    }
+    .banner2 .text1 h2 {
+        font-size: 40px;
+    }
+    .banner2 .text h2 {
+        font-size: 40px;
+    }
+    .banner2 .text h4 {
+        font-size: 15px;
+    }
+    .banner2 .text button {
+        padding: 7px 10px;
+    }
+}
+@media (max-width: 575px) {
+    .carousel .carousel-caption button {
+        display: none;
+    }
+    .banner2 .text button {
+        display: none;
+    }
+    .banner2 .text {
+        margin-top: 30px;
+    }
+    .footer img {
+        margin: 0 auto;
+    }
+    .footer .copy {
+        text-align: center;
+    }
+    .footer .gmail-footer {
+        text-align: center;
+    }
+    .info-footer {
+        text-align: center;
+    }
+}
+@media (max-width: 479px) {
+    .carousel .carousel-caption h2 {
+        font-size: 30px;
+    }
+    .carousel .carousel-caption h3 {
+        font-size: 10px;
+    }
+    .banner .text h2 {
+        font-size: 25px;
+    }
+    .banner .text h4 {
+        font-size: 10px;
+    }
+    .banner .text p {
+        font-size: 10px;
+    }
+    .banner2 .text1 h2 {
+        font-size: 25px;
+    }
+    .banner2 .text h2 {
+        font-size: 25px;
+    }
+    .banner2 .text h4 {
+        font-size: 10px;
+    }
+    .info-footer {
+        text-align: center;
+    }
+    .headline .title {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .nav-tabs .nav-link {
+        margin-left: 20px;
+    }
+    .blog .content h2 {
+        margin-top: 25px;
+    }
+    .blog .content p {
+        margin-bottom: 35px;
+    }
+    .customer .text h2 {
+        margin-top: 30px;
+    }
+    .customer .carousel img {
+        margin: 15px auto;
+    }
+}

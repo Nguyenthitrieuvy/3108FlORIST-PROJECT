@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.banner {
+    position: relative;
+}
+.banner .banner-about {
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+.banner .title-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner .title-banner h1 {
+    font-family: Abril Fatface;
+    font-size: 65px;
+    text-align: center;
+    color: #fff;
+}
+.banner .title-banner p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+.img-link {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.img-link .img-content {
+    text-align: center;
+}
+.img-link .img-content img {
+    margin: 0 auto;
+    width: 20%;
+}
+.img-link h1 {
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+.img-link h2 {
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin-top: 0;
+}
+.img-link .img-color-1 img {
+    width: 15%;
+}
+.img-link .img-color-1 h2 {
+    font-size: 16px;
+}
+.img-link .img-color-1 {
+    background-color: #f5e7e6;
+    padding: 34px 0;
+}
+.img-link .img-color-2 {
+    background-color: #f4f4f4;
+    padding: 36px 0;
+}
+.img-link .img-color-3 {
+    background-color: #dce7ed;
+    padding: 44px 0;
+}
+
+.message {
+    margin-bottom: 50px;
+}
+.message h1 {
+    font-family: Abril Fatface;
+    font-size: 30px;
+}
+.message h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.message h2 span {
+    color: rgb(245, 79, 106);
+}
+.message input {
+    padding: 7px 20px;
+    outline: none;
+    width: 100%;
+}
+.message textarea {
+    width: 100%;
+    padding: 12px 20px;
+    outline: none;
+}
+.message button {
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    font-family: Abril Fatface;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+.message button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.google {
+    border-bottom: 1px solid gray;
+    padding: 100px 0;
+}
+.info-footer {
+    margin-top: 60px;
+}
+
+@media (max-width: 991px) {
+    .img-link .img-color-3 {
+        margin-top: 30px;
+    }
+    .img-link .img-color-3 img {
+        width: 10%;
+    }
+    .message img {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .banner .title-banner h1 {
+        font-size: 40px;
+    }
+    .banner .title-banner p {
+        font-size: 12px;
+    }
+    .img-link {
+        padding-top: 50px;
+    }
+    .img-link .img-color-2 {
+        margin-top: 30px;
+    }
+    .img-link .img-color-2 img {
+        width: 10%;
+    }
+    .img-link .img-color-1 img {
+        width: 10%;
+    }
+    .message img {
+        width: 100%;
+    }
+    .google {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 575px) {
+    .banner .title-banner p {
+        display: none;
+    }
+}
+@media (max-width: 479px) {
+    .banner .title-banner h1 {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.banner {
+    position: relative;
+}
+.banner .banner-about {
+    overflow: hidden;
+    position: relative;
+}
+.banner .title-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner .title-banner h1 {
+    font-family: Abril Fatface;
+    font-weight: 400;
+    font-size: 55px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner ul {
+    text-align: center;
+}
+.banner ul li {
+    display: inline;
+}
+.banner ul li + li:before {
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(232, 232, 232);
+    content: ">";
+}
+.banner ul li a {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(232, 232, 232);
+}
+.banner ul li a:hover {
+    color: rgb(157, 155, 155);
+}
+
+.page-login {
+    margin-bottom: 50px;
+}
+.page-login .social {
+    text-align: center;
+}
+.page-login .social a {
+    display: inline-block;
+    width: calc(50% - 5px);
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    background: #3b5998;
+    margin-bottom: 30px;
+}
+.page-login .social a i {
+    margin-right: 5px;
+}
+.page-login .social a:last-child {
+    background: #55acee;
+}
+.page-login .social a:hover {
+    text-decoration: none;
+}
+.page-login h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    font-weight: 600;
+    position: relative;
+}
+.page-login p {
+    color: #888;
+    margin-bottom: 20px;
+}
+.page-login form input[type="checkbox"] {
+    display: none;
+}
+.page-login form input[type="checkbox"]:checked + label:before {
+    content: "\2713";
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+    line-height: 18px;
+}
+.page-login form .control-label {
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.page-login form .remember {
+    float: left;
+    width: 100%;
+}
+.page-login form .remember label.label-check {
+    width: auto;
+    color: #888;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+.page-login form .remember label.label-check:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border: 1px solid #b5b5b5;
+    background-color: #fff;
+}
+.page-login form .remember .help {
+    float: right;
+    vertical-align: bottom;
+    margin-top: 12px;
+}
+.page-login form label.label-check {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    padding-left: 30px;
+    margin: 10px 0px;
+    color: #373737;
+}
+.page-login form label.label-check:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border: 1px solid #b5b5b5;
+    background-color: #fff;
+}
+
+.link-v1.rt {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #222;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-family: Abril Fatface;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.link-v1.rt:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+.info-footer {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 70px;
+}
+@media (max-width: 767px) {
+    .banner .title-banner h1 {
+        font-size: 35px;
+    }
+}
+@media (max-width: 479px) {
+    .page-login .social a {
+        font-size: 14px;
+    }
+}

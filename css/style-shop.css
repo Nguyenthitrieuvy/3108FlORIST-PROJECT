@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    display: block;
+}
+body {
+    position: relative;
+    background-image: url(../img/BG-home1.jpeg);
+    background-position: -515px 0;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.banner .text {
+    top: -40px;
+    left: 20%;
+    transform: translateY(50%);
+}
+.banner .text h2 {
+    animation: banner 2s;
+}
+.banner .text h4 {
+    animation: banner2 1.5s;
+}
+.banner .text button {
+    margin-top: 5px;
+    padding: 8px 25px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    transition: 0.5s;
+    animation: banner2 1.5s;
+}
+.banner .text button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@keyframes banner {
+    from {
+        opacity: 0;
+        transform: translateY(30px) rotate(60deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+    }
+}
+@keyframes banner2 {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content {
+    padding: 50px 15px;
+}
+.content .show-side .showing {
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+    padding: 8px 16px;
+}
+.content .show-side button {
+    border: none;
+    outline: none;
+    padding: 6px 8px 8px 8px;
+    background: #eeeeee;
+    transition: 0.5s;
+}
+.content .show-side button i {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+.content .show-side button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.content .show-side button:hover i {
+    color: #fff;
+}
+
+.content .show-select {
+    padding: 0 0 0 50px;
+}
+.content .show-select .select-show {
+    padding: 8px;
+    width: 20%;
+    margin-left: 10px;
+    outline: none;
+}
+.content .show-select .select-defaul {
+    width: 45%;
+    padding: 8px;
+    margin-left: 15px;
+    outline: none;
+}
+
+.flower {
+    border-bottom: 1px solid gray;
+}
+.flower .card {
+    position: relative;
+    border: none;
+    background-color: transparent;
+}
+.flower .card .content {
+    text-align: center;
+}
+.flower .card .content h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 400;
+    color: #333;
+}
+.flower .card .icon {
+    color: rgb(240, 119, 119);
+    margin-bottom: 7px;
+}
+.flower .card .sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(240, 119, 119);
+    font-size: 13px;
+    padding: 3px 8px;
+    color: #fff;
+}
+.flower .card p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+.flower .card p span {
+    text-decoration: line-through;
+    color: rgb(159, 159, 159);
+    font-size: 15px;
+    margin-left: 8px;
+}
+.flower .card .social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.flower .card:hover .social {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.flower .card .social i {
+    margin-top: 150px;
+    font-size: 20px;
+    text-align: center;
+    color: #888;
+}
+.flower .card .social i:hover {
+    color: #000;
+}
+.flower .card .social a {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+.flower .number {
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+.flower .number li {
+    display: inline-block;
+    margin: 2px;
+}
+.flower .number li a {
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    background-color: #eeeeee;
+    border: none;
+    padding: 7px 10px;
+    transition: 0.5s;
+}
+.flower .number li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+.modal-body .color {
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.modal-body .sta-red {
+    color: rgb(246, 122, 143);
+}
+.modal-body .color-board {
+    display: flex;
+}
+.modal-body .color-1 {
+    background-color: pink;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.modal-body .color-2 {
+    background-color: gold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.modal-body .color-3 {
+    background-color: #fff;
+    border: 1px solid rgb(221, 221, 221);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.modal-body .color-4 {
+    background-color: plum;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.info-footer {
+    margin-top: 60px;
+}
+
+@media (max-width: 991px) {
+    .content .show-side .show {
+        display: none;
+    }
+    .content .show-select .select-defaul {
+        width: 50%;
+    }
+    .content .show-select {
+        padding: 0;
+    }
+    .flower .number {
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+}
+@media (max-width: 767px) {
+    .banner .text h2 {
+        font-size: 25px;
+    }
+    .banner .text button {
+        padding: 5px 15px;
+        margin-top: 5px;
+    }
+    .content .show-side .showing {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    .banner .text {
+        top: -50px;
+    }
+    .content {
+        padding: 30px 0;
+    }
+    .content .show-select {
+        margin-top: 20px;
+    }
+    .content .show-select .showing {
+        display: none;
+    }
+    .content .show-select .select-show {
+        width: 10%;
+    }
+    .content .show-select .select-defaul {
+        width: 30%;
+    }
+}
+@media (max-width: 379px) {
+    .banner .text {
+        top: -30px;
+    }
+    .banner .text button {
+        display: none;
+    }
+}

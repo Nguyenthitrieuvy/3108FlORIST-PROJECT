@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+input {
+    outline: none;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.banner {
+    position: relative;
+    margin-bottom: 80px;
+}
+.banner .banner-about {
+    overflow: hidden;
+    position: relative;
+}
+.banner .title-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner .title-banner h1 {
+    font-family: Abril Fatface;
+    font-weight: 400;
+    font-size: 55px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner ul {
+    text-align: center;
+}
+.banner ul li {
+    display: inline;
+}
+.banner ul li + li:before {
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(232, 232, 232);
+    content: ">";
+}
+.banner ul li a {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(232, 232, 232);
+}
+.banner ul li a:hover {
+    color: rgb(157, 155, 155);
+}
+
+.services {
+    margin-bottom: 50px;
+}
+.services h3 {
+    font-size: 20px;
+    color: pink;
+}
+.services h1 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 35px;
+    margin-top: 30px;
+}
+.services h1::after {
+    content: "";
+    width: 15%;
+    height: 1px;
+    background-color: #000;
+    display: block;
+    margin: 30px 0;
+}
+.services p {
+    color: #939595;
+}
+.services .box {
+    background-color: #dbe7e9;
+}
+.services .box h2 {
+    font-size: 22px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    line-height: 30px;
+    font-family: "Abril Fatface", cursive;
+}
+.services .box p {
+    padding-left: 30px;
+    color: #000;
+}
+.services .box button {
+    margin: 10px 30px 30px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    background-color: #dbe7e9;
+    transition: 0.5s;
+}
+.services .box button:hover {
+    background-color: pink;
+    border: 1px solid pink;
+    color: #fff;
+}
+
+.steps .box1 {
+    display: flex;
+}
+.steps .box1 h2 span {
+    background-color: rgb(223, 163, 173);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #000;
+}
+.steps .box1 .text {
+    margin-left: 30px;
+}
+.steps .box1 .text h3 {
+    font-size: 23px;
+    font-family: "Abril Fatface", cursive;
+}
+.steps .box1 .text p {
+    color: #939595;
+    font-weight: 300;
+}
+.steps .box2 {
+    display: flex;
+    margin-top: 20px;
+}
+.steps .box2 h2 span {
+    background-color: pink;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #000;
+}
+.steps .box2 .text {
+    margin-left: 30px;
+}
+.steps .box2 .text h3 {
+    font-size: 23px;
+    font-family: "Abril Fatface", cursive;
+}
+.steps .box2 .text p {
+    color: #939595;
+    font-weight: 300;
+}
+.steps .box3 {
+    display: flex;
+    margin-top: 20px;
+}
+.steps .box3 h2 span {
+    background-color: rgb(255, 209, 192);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #000;
+}
+.steps .box3 .text {
+    margin-left: 30px;
+}
+.steps .box3 .text h3 {
+    font-size: 23px;
+    font-family: "Abril Fatface", cursive;
+}
+.steps .box3 .text p {
+    color: #939595;
+    font-weight: 300;
+}
+.steps .other {
+    border: 1px solid #000;
+}
+.steps .other h2 {
+    background-color: pink;
+    font-size: 22px;
+    padding: 30px;
+}
+.steps .other p {
+    padding-left: 30px;
+    margin: 30px 0;
+    transition: 0.5s;
+}
+.steps .other p:hover {
+    color: pink;
+}
+.steps .other i {
+    margin-left: 10px;
+}
+
+.abuml {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: rgb(248, 234, 236);
+    padding: 40px;
+}
+.abuml .cart .thumb2 {
+    margin-top: 25px;
+}
+
+.info-footer {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 70px;
+}

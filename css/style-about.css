@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.banner {
+    position: relative;
+    padding-bottom: 150px;
+}
+.banner .banner-about {
+    overflow: hidden;
+    position: relative;
+}
+.banner .title-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner .title-banner h1 {
+    font-family: Abril Fatface;
+    font-weight: 400;
+    font-size: 65px;
+    text-align: center;
+    color: #fff;
+}
+.banner .title-banner p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #f4f4f4;
+    text-align: center;
+}
+.wellcome {
+    padding-bottom: 70px;
+}
+.wellcome .media .media-left {
+    width: 20%;
+}
+.wellcome .media {
+    padding-bottom: 20px;
+    display: flex;
+}
+.wellcome .media .media-body {
+    padding-left: 40px;
+}
+.wellcome .media .media-body h1 {
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+    color: #4e4e4e;
+}
+.wellcome .media .media-body h2 {
+    font-family: Abril Fatface;
+    font-weight: 300;
+    font-size: 30px;
+    color: black;
+    margin-top: 0;
+}
+.wellcome p {
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    padding: 0 90px 20px 0;
+}
+.headline h2 {
+    text-align: center;
+    font-family: Abril Fatface;
+    font-size: 60px;
+    font-weight: 300;
+}
+.headline p {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 60px;
+}
+
+.team .title-acc {
+    text-align: center;
+}
+.team .title-acc h2 {
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-weight: 800;
+}
+.team .title-acc p {
+    color: #888;
+}
+.team .title-acc .social-acc a {
+    display: inline-block;
+    margin-right: 7px;
+    padding: 0 10px;
+    color: #888;
+    transition: 0.5s;
+}
+.team .title-acc .social-acc a:hover {
+    color: #000;
+}
+
+.customer .text {
+    text-align: center;
+}
+.customer .text h2 {
+    text-align: center;
+    font-family: Abril Fatface;
+    font-weight: 300;
+    font-size: 55px;
+    margin-top: 100px;
+}
+.customer .text i {
+    font-size: 60px;
+    color: #000;
+}
+.customer .carousel {
+    text-align: center;
+}
+.customer .carousel p {
+    font-size: 15px;
+    color: #888;
+}
+.customer .carousel img {
+    margin: 40px auto;
+}
+.customer .carousel h3 {
+    font-size: 20px;
+    color: #000;
+}
+.customer .carousel h3 span {
+    color: #888;
+    font-size: 17px;
+}
+
+.img-link {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.img-link .img-content {
+    text-align: center;
+}
+.img-link .img-content img {
+    margin: 0 auto;
+    width: 20%;
+}
+.img-link h1 {
+    font-family: Abril Fatface;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.img-link h2 {
+    font-family: Abril Fatface;
+    font-size: 26px;
+    color: black;
+    text-align: center;
+    margin-top: 0;
+}
+.img-link .img-color-1 {
+    background-color: #f5e7e6;
+    padding: 34px 0;
+}
+.img-link .img-color-2 {
+    background-color: #f4f4f4;
+    padding: 43px 0;
+}
+.img-link .img-color-3 {
+    background-color: #dce7ed;
+    padding: 34px 0;
+}
+
+@media (max-width: 991px) {
+    .banner {
+        padding-bottom: 40px;
+    }
+    .wellcome {
+        padding-bottom: 40px;
+    }
+
+    .customer .text h2 {
+        margin-top: 40px;
+    }
+    .customer .carousel img {
+        margin: 15px auto;
+    }
+
+    .wellcome .social-well a {
+        margin-bottom: 30px;
+    }
+    .img-link {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .img-link h1 {
+        font-size: 22px;
+    }
+    .img-link h2 {
+        font-size: 20px;
+    }
+    .img-link .img-color-3 {
+        margin-top: 30px;
+    }
+    .img-link .img-color-3 img {
+        width: 12%;
+    }
+    .team .title-acc .social-acc a {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .img-link .img-color-2 {
+        margin-top: 30px;
+    }
+    .img-link .img-content img {
+        width: 12%;
+    }
+    .banner .title-banner h1 {
+        font-size: 40px;
+    }
+    .banner .title-banner p {
+        font-size: 12px;
+    }
+}
