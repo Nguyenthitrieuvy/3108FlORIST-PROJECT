@@ -218,7 +218,93 @@ ul {
     margin-top: 25px;
 }
 
+.submit {
+    padding: 100px 50px;
+    position: relative;
+    border-radius: 300px;
+    margin: 0 auto 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+    width: 35%;
+}
+.submit .thumb {
+    width: 50%;
+    margin: 0 auto;
+}
+.submit h1 {
+    font-size: 28px;
+    margin: 10px 0 30px;
+    font-family: "Abril Fatface", cursive;
+}
+.submit .form-field input {
+    border: 0;
+    border-bottom: 1px solid #d9d9d9;
+    background: transparent;
+    border-radius: 0;
+    color: #787878;
+    padding-left: 0;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.submit .radio-buttons,
+.submit .radio-buttons {
+    display: flex;
+    font-size: 16px;
+    margin: 30px 0 0;
+    justify-content: space-between;
+}
+.submit .form-field select {
+    border: 0;
+    border-bottom: 1px solid #d9d9d9;
+    background: transparent;
+    border-radius: 0;
+    color: #787878;
+    padding-left: 0;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.submit button {
+    padding: 7px 17px;
+    margin-top: 15px;
+    background-color: pink;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.submit button:hover {
+    background-color: #000;
+}
+
 .info-footer {
     border-top: 1px solid #e6e6e6;
     padding-top: 70px;
+}
+
+@media (max-width: 991px) {
+    .vector-2 img {
+        display: none;
+    }
+    .submit {
+        padding: 100px 70px;
+        width: 55%;
+    }
+}
+@media (max-width: 767px) {
+    .submit {
+        padding: 100px 70px;
+        width: 70%;
+    }
+}
+@media (max-width: 575px) {
+    .submit {
+        padding: 100px 70px;
+        width: 90%;
+    }
+}
+@media (max-width: 479px) {
+    .submit {
+        padding: 100px 80px;
+        width: 90%;
+    }
 }

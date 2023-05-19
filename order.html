@@ -19,7 +19,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
         <!-- Global css -->
-        <link rel="stylesheet" href="css/style-homev3.css" />
+        <link rel="stylesheet" href="css/style-home.css" />
 
         <!-- local css -->
         <link rel="stylesheet" href="css/style-order.css" />
@@ -27,11 +27,11 @@
     <body>
         <nav class="navbar navbar-expand-sm navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="javascript:void(0)"><img src="img/florist.png" alt="" /></a>
+                <a class="navbar-brand" href="index.html"><img src="img/florist.png" alt="" /></a>
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="homev3.html">Home</a>
+                            <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="shop.html">Shop +</a>
@@ -63,11 +63,11 @@
             </div>
             <div class="offcanvas-body">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Shop+</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop+</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="offcanvas-text">
                     <h1 class="offcanvas-title">Information</h1>
@@ -116,8 +116,7 @@
                 <h3>Total: <span>$621.6</span></h3>
             </div>
             <div class="button">
-                <button>ADD TO CARD</button>
-                <button>CHECK VIEW</button>
+                <a href="cart.html"><button>CHECK VIEW</button></a>
             </div>
         </div>
 
@@ -128,7 +127,7 @@
                     <div class="title-banner">
                         <h1>Order Completed</h1>
                         <ul>
-                            <li><a href="homev3.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="">Order Completed</a></li>
                         </ul>
                     </div>
@@ -168,7 +167,7 @@
                 </div>
                 <p class="box center space-50">Thank you for shopping with us, your order is complete!</p>
                 <div class="box">
-                    <a class="link-v1 lh-50 margin-right-20 space-20 color-brand" href="homev3.html" title="HOME PAGE">HOME PAGE</a>
+                    <a class="link-v1 lh-50 margin-right-20 space-20 color-brand" href="index.html" title="HOME PAGE">HOME PAGE</a>
                     <a class="link-v1 lh-50 rt space-20" href="shop.html" title="CONTINUS SHOPPING">CONTINUS SHOPPING</a>
                 </div>
             </div>
@@ -199,10 +198,10 @@
                     <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <h3>Shop collection</h3>
                         <ul>
-                            <li><i class="fas fa-long-arrow-alt-right"></i><a href="homev3.html">New Arrivals</a></li>
+                            <li><i class="fas fa-long-arrow-alt-right"></i><a href="index.html">New Arrivals</a></li>
                             <li><i class="fas fa-long-arrow-alt-right"></i><a href="shop.html">Hot</a></li>
                             <li><i class="fas fa-long-arrow-alt-right"></i><a href="product.html">Detail</a></li>
-                            <li><i class="fas fa-long-arrow-alt-right"></i><a href="homev3.html">Popular product</a></li>
+                            <li><i class="fas fa-long-arrow-alt-right"></i><a href="index.html">Popular product</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 social">
@@ -259,7 +258,7 @@
                 $(".icon-accout").click(function () {
                     $(".accout").fadeToggle("active");
                 });
-        
+
                 $(".color-board div").click(function () {
                     $img = $(this).attr("data-img");
                     $(".thumbBig img").attr("src", $img);
